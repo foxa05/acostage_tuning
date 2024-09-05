@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+
+{% block title %}Gallery{% endblock %}
+
+{% block content %}
+    <div class="gallery">
+        <div class="container">
+            <h2>Galerie Proiecte</h2>
+            <p>Explorați galeria noastră pentru a vedea transformările impresionante pe care le-am realizat pentru clienții noștri. Fiecare vehicul din această galerie reflectă angajamentul nostru față de calitate și atenția la detalii. De la tuning-ul de performanță la personalizări estetice, fiecare proiect a fost abordat cu pasiune și expertiză tehnică. Vă invităm să descoperiți rezultatele muncii noastre și să ne contactați pentru a discuta despre cum vă putem transforma vehiculul.</p>
+            <div class="gallery-grid">
+                <img src="{{ url_for('static', filename='images/car1.jpg') }}" alt="Proiect 1">
+                <img src="{{ url_for('static', filename='images/car2.jpg') }}" alt="Proiect 2">
+                <img src="{{ url_for('static', filename='images/car3.jpg') }}" alt="Proiect 3">
+                <img src="{{ url_for('static', filename='images/car4.jpg') }}" alt="Proiect 4">
+                <img src="{{ url_for('static', filename='images/car5.jpg') }}" alt="Proiect 5">
+                <img src="{{ url_for('static', filename='images/car6.jpg') }}" alt="Proiect 6">
+                <img src="{{ url_for('static', filename='images/car7.jpg') }}" alt="Proiect 7">
+                <img src="{{ url_for('static', filename='images/car8.jpg') }}" alt="Proiect 8">
+                <img src="{{ url_for('static', filename='images/car9.jpg') }}" alt="Proiect 9">
+                <img src="{{ url_for('static', filename='images/car10.jpg') }}" alt="Proiect 10">
+                <img src="{{ url_for('static', filename='images/car11.jpg') }}" alt="Proiect 11">
+            </div>
+        </div>
+    </div>
+{% endblock %}
