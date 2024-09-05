@@ -1,0 +1,403 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Consistent font family */
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    background-image: url('/static/images/logo.png'); /* Ensure the correct path */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Keep the background fixed during scrolling */
+    background-color: #f9f9f9; /* Fallback background color */
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333; /* Original color */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensure space between nav links and social buttons */
+}
+
+/* Centering Content in the Navbar */
+.navbar-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Optional: Set a max-width for centering */
+    justify-content: center;
+    position: relative;
+}
+
+/* Navigation Links */
+.navbar .nav-links {
+    list-style: none;
+    margin: 0 auto; /* Center the nav links horizontally */
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+/* Social Media Buttons Container */
+.social-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    position: absolute;
+    right: 20px; /* Align to the right edge */
+}
+
+/* Social Buttons Styling */
+.social-button {
+    display: inline-block;
+    width: 40px; /* Adjust to match your desired size */
+    height: 40px; /* Adjust to match your desired size */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: transform 0.3s ease; /* Optional hover effect */
+}
+
+.social-button.facebook {
+    background-image: url('/static/images/facebook.png');
+}
+
+.social-button.instagram {
+    background-image: url('/static/images/instagram.png');
+}
+
+.social-button:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Navigation Links Styling */
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #fff; /* Original color */
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    background-color: #555; /* Original hover color */
+}
+
+
+
+/* Adjust button size and alignment */
+.social-buttons img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Ensure image fits within the button */
+}
+
+
+
+
+/* Main Content */
+.content {
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Intro Section */
+.intro {
+    padding: 40px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.intro h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #fff;
+}
+
+.intro p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: #fff;
+}
+
+/* Services Overview, Why Choose Us, and Call to Action */
+.services-overview, .why-choose-us, .call-to-action {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background: rgba(30, 30, 30, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.services-overview h2, .why-choose-us h2, .call-to-action h2 {
+    font-size: 28px;
+    color: #fefefe;
+}
+
+.services-list, .reasons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-item, .reason-item {
+    flex: 1 1 calc(33.333% - 20px);
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 20px; /* Consistent padding */
+    background-color: #28a745; /* Consistent button color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+}
+/* Call to Action on Services Page */
+.services-cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.services-cta .cta-button {
+    background-color: #4CAF50; /* Ensure consistency with other CTAs */
+    font-size: 18px; /* Consistent button font size */
+    padding: 12px 20px; /* Consistent button padding */
+    display: inline-block; /* Ensure button is inline with center alignment */
+}
+/* Contact Page */
+.contact {
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact .container {
+    background: rgba(30, 30, 30, 0.8);
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.contact input, .contact select, .contact textarea {
+    font-size: 16px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact textarea {
+    resize: vertical;
+}
+
+.contact button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #218838;
+}
+
+.contact .result {
+    font-size: 16px;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Calculator Page Styles */
+.calculator {
+    font-size: 16px;
+    color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(30, 30, 30, 0.8);
+    border-radius: 8px;
+}
+
+.calculator-title {
+    text-align: center;
+    color: #fefefe;
+}
+
+.calculator-form {
+    margin-top: 20px;
+}
+
+.calculator-form .form-group {
+    margin-bottom: 15px;
+}
+
+.calculator-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.calculator-form input, .calculator-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.calculator-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.calculator-form button:hover {
+    background-color: #45a049;
+}
+
+/* Gallery Page Styles */
+.gallery {
+    padding: 40px;
+    color: white;
+    font-size: 20px;
+}
+
+.gallery .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery h2 {
+    text-align: center;
+}
+
+.gallery p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Services Table */
+.services-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.services-table th, .services-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.services-table th {
+    background-color: #333;
+    color: #fff;
+}
+
+.services-table tr:hover {
+    background-color: black;
+    color: white; /* Ensure text is visible on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-links {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .gallery-grid img {
+        max-width: 100%;
+    }
+
+    .services-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
